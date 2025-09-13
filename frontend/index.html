@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Community Church - Welcome Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">Grace Community Church</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="about.html" aria-label="About Us">About</a></li>
+                <li><a href="services.html" aria-label="Services">Services</a></li>
+                <li><a href="events.html" aria-label="Events">Events</a></li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Grace Community Church</h1>
+            <p>Join us for worship this Sunday at 9:00 AM & 11:00 AM</p>
+            <div class="cta-buttons">
+                <a href="#service-times" class="btn btn-primary">Visit Us</a>
+                <a href="#" class="btn btn-secondary">Watch Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <h2 class="section-title">Welcome to Our Church Family</h2>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h3>A Message from Pastor John Smith</h3>
+                    <p>Welcome to Grace Community Church! We are thrilled that you're exploring our church family. For over 50 years, our congregation has been a beacon of hope and love in Hometown, dedicated to sharing the transformative message of Jesus Christ with our community and beyond.</p>
+                    <p>Whether you're seeking answers to life's biggest questions, looking for a supportive community, or wanting to deepen your faith journey, you'll find a warm welcome here. Our doors are open to all, and we invite you to experience the joy, peace, and purpose that comes from a relationship with God. Come as you are – you belong here!</p>
+                </div>
+                <div class="pastor-image" role="img" aria-label="Pastor John Smith"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Times Section -->
+    <section id="service-times">
+        <div class="container">
+            <div class="service-times-card">
+                <h3>Service Times</h3>
+                <div id="serviceTimesList">
+                    <div class="service-time">
+                        <h4>Sunday Morning</h4>
+                        <p>Traditional Service: 9:00 AM</p>
+                        <p>Contemporary Service: 11:00 AM</p>
+                    </div>
+                    <div class="service-time">
+                        <h4>Wednesday Evening</h4>
+                        <p>Bible Study & Prayer: 7:00 PM</p>
+                    </div>
+                    <div class="service-time">
+                        <h4>Sunday School</h4>
+                        <p>All Ages: 10:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div id="eventsLoading" class="spinner" style="display: none;"></div>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Address</h4>
+                    <p>123 Faith Street<br>Hometown, ST 12345</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>info@gracecommunitychurch.org</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Office Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <p>Interactive Map Placeholder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Modal -->
+    <div id="newsletterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('newsletterModal')">&times;</span>
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <label for="newsletter-email">Email Address</label>
+                    <input type="email" id="newsletter-email" name="email" required>
+                    <span class="error-message" id="newsletter-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <span class="success-message" id="newsletter-success"></span>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Service Times</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#" onclick="openModal('newsletterModal'); return false;">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li><a href="#">Children's Ministry</a></li>
+                        <li><a href="#">Youth Ministry</a></li>
+                        <li><a href="#">Adult Education</a></li>
+                        <li><a href="#">Outreach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for updates and inspiration</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">t</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">i</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Faith Street<br>
+                    Hometown, ST 12345<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@gracecommunitychurch.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grace Community Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

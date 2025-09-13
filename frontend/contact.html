@@ -1,0 +1,184 @@
+<!-- ====================================== -->
+<!-- File: contact.html -->
+<!-- ====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grace Community Church</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Grace Community Church</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contact-name">Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+
+                    <h3 style="margin-top: 2rem;">Submit a Prayer Request</h3>
+                    <form id="prayerForm">
+                        <div class="form-group">
+                            <label for="prayer-name">Name (Optional)</label>
+                            <input type="text" id="prayer-name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="prayer-email">Email (Optional)</label>
+                            <input type="email" id="prayer-email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="prayer-request">Prayer Request *</label>
+                            <textarea id="prayer-request" name="request" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="prayer-anonymous" name="is_anonymous">
+                                Submit anonymously
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+                        <div id="prayer-status" class="form-status"></div>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <h2>Church Information</h2>
+                    <div class="info-block">
+                        <h3>Address</h3>
+                        <p>123 Faith Street<br>
+                        Hometown, ST 12345</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Email</h3>
+                        <p>info@gracecommunitychurch.org</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                        Saturday: By appointment<br>
+                        Sunday: 8:00 AM - 1:00 PM</p>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Staff Directory</h3>
+                    <div class="staff-directory">
+                        <div class="staff-contact">
+                            <h4>Pastor John Smith</h4>
+                            <p>Senior Pastor<br>
+                            pastor@gracecommunitychurch.org</p>
+                        </div>
+                        <div class="staff-contact">
+                            <h4>Sarah Johnson</h4>
+                            <p>Worship Director<br>
+                            worship@gracecommunitychurch.org</p>
+                        </div>
+                        <div class="staff-contact">
+                            <h4>Michael Davis</h4>
+                            <p>Youth Pastor<br>
+                            youth@gracecommunitychurch.org</p>
+                        </div>
+                        <div class="staff-contact">
+                            <h4>Emily Wilson</h4>
+                            <p>Children's Ministry<br>
+                            children@gracecommunitychurch.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.0!2d-74.0!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3NMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Service Times</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Faith Street<br>
+                    Hometown, ST 12345<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@gracecommunitychurch.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grace Community Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main..js"></script>
+</body>
+</html>

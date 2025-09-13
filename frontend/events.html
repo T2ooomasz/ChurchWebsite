@@ -1,0 +1,113 @@
+<!-- ====================================== -->
+<!-- File: events.html -->
+<!-- ====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Grace Community Church</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Grace Community Church</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Church Events</h1>
+            <p>Join us for fellowship, worship, and community activities</p>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <div class="events-controls">
+                <button class="btn btn-secondary" id="viewToggle">Toggle View</button>
+                <select id="eventFilter" class="filter-select">
+                    <option value="all">All Events</option>
+                    <option value="upcoming">Upcoming</option>
+                    <option value="past">Past Events</option>
+                </select>
+            </div>
+            
+            <div id="eventsLoading" class="spinner" style="display: none;"></div>
+            <div id="eventsContainer" class="events-grid">
+                <!-- Events loaded dynamically -->
+            </div>
+            
+            <div id="pagination" class="pagination">
+                <!-- Pagination controls -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('eventModal')">&times;</span>
+            <div id="eventDetails">
+                <!-- Event details loaded here -->
+            </div>
+            <form id="rsvpForm" style="display: none;">
+                <h3>RSVP for this Event</h3>
+                <div class="form-group">
+                    <label for="rsvp-name">Name</label>
+                    <input type="text" id="rsvp-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-email">Email</label>
+                    <input type="email" id="rsvp-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-attendees">Number of Attendees</label>
+                    <input type="number" id="rsvp-attendees" min="1" value="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit RSVP</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Service Times</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Faith Street<br>
+                    Hometown, ST 12345<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@gracecommunitychurch.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grace Community Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
